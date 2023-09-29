@@ -1,7 +1,7 @@
 import React from "react";
 import FirstComponent from "./components/FirstComponent";
 import { SecondComponent } from "./components/SecondComponent";
-import { DesestruturacaoComponent } from "./components/DesestruturacaoProp";
+import { Category, DesestruturacaoComponent } from "./components/DesestruturacaoProp";
 import { State } from "./components/State";
 
 function App() {
@@ -25,6 +25,7 @@ function App() {
         content='lorem Ipsum'
         commentsQty={10}
         tags={["ts", "react", "props", "props desestruturado"]}
+        category={Category.JS}
       />
       <State />
     </div>
