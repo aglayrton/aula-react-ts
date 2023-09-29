@@ -2,6 +2,7 @@ import React from "react";
 import FirstComponent from "./components/FirstComponent";
 import { SecondComponent } from "./components/SecondComponent";
 import { DesestruturacaoComponent } from "./components/DesestruturacaoProp";
+import { State } from "./components/State";
 
 function App() {
   //1 - variáveis
@@ -11,6 +12,7 @@ function App() {
   const userGreeting = (name: string): string => {
     return `Olá, ${name}`;
   };
+  //6 - useState
   return (
     <div className='App'>
       <h1>{name}</h1>
@@ -24,6 +26,7 @@ function App() {
         commentsQty={10}
         tags={["ts", "react", "props", "props desestruturado"]}
       />
+      <State />
     </div>
   );
 }
